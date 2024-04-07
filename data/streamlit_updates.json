@@ -1,0 +1,52 @@
+{
+    "Highlights": {
+        "Version 1.28": {
+            "Description": "Streamlit Version 1.32.0 is here!",
+            "Documentation": "https://docs.streamlit.io/library/changelog#version-1320"
+        },
+        "TestingFramework": {
+            "Description": "Introducing a new testing framework for Streamlit apps!",
+            "Documentation": "https://docs.streamlit.io/library/api-reference/app-testing"
+        },
+        "ConnectionManagement": {
+            "Description": "Announcing the general availability of st.connection, a command to conveniently manage connections in Streamlit apps.",
+            "Documentation": "https://docs.streamlit.io/library/api-reference/connections#built-in-connections"
+        },
+        "SnowflakeConnection": {
+            "Description": "SnowparkConnection has been upgraded to the new and improved SnowflakeConnection — the same, great functionality plus more!",
+            "Documentation": "https://docs.streamlit.io/library/api-reference/connections/st.connections.snowflakeconnection"
+        },
+        "DataEditorUI": {
+            "Description": "st.dataframe and st.data_editor have a new toolbar!",
+            "Documentation": "https://docs.streamlit.io/library/advanced-features/dataframes"
+        }
+    },
+    "NotableChanges": {
+        "SpinnerOverlay": {
+            "Description": "When using a spinner with cached functions, the spinner will be overlaid instead of pushing content down.",
+            "Issue": "#7488"
+        },
+        "DatetimeEditing": {
+            "Description": "st.data_editor now supports datetime index editing.",
+            "Issue": "#7483"
+        },
+        "DecimalSupport": {
+            "Description": "Improved support for decimal.Decimal in st.dataframe and st.data_editor.",
+            "Issue": "#7475"
+        }
+    },
+    "OtherChanges": {
+        "StringDtypeHandling": {
+            "Description": "Improved string dtype handling for DataFrames.",
+            "Issue": "#7479"
+        },
+        "SafeHTMLWrite": {
+            "Description": "st.write will avoid using unsafe_allow_html=True if possible.",
+            "Issue": "#7432"
+        },
+        "ExpanderFix": {
+            "Description": "Bug fix: Implementation of st.expander was simplified for improved behavior and consistency.",
+            "Issues": ["#7247", "#2839"]
+        }
+    }
+}
