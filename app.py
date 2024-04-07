@@ -61,7 +61,6 @@ def main():
                 st.write(f"Answer: {output['answer']}")
             else:
                 st.write("Could not find an answer.")
-                st.write("DB username:", st.secrets["API_TOKEN"])
         else:
             st.write("Please provide both a question and context.")
 
