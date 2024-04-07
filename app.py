@@ -8,8 +8,6 @@ API_TOKEN = st.secrets["API_TOKEN"]
 API_URL = "https://api-inference.huggingface.co/models/deepset/roberta-base-squad2"
 headers = {"Authorization": f"Bearer {API_TOKEN}"}
 
-
-st.write("DB username:", st.secrets["API_TOKEN"])
 def query(payload):
     response = requests.post(API_URL, headers=headers, json=payload)
     return response.json()
@@ -63,6 +61,7 @@ def main():
                 st.write(f"Answer: {output['answer']}")
             else:
                 st.write("Could not find an answer.")
+                st.write("DB username:", st.secrets["API_TOKEN"])
         else:
             st.write("Please provide both a question and context.")
 
